@@ -11,9 +11,9 @@
    </theader>
   <tbody>
   <td>
-   <a href="#WhatisAngularJS">1: AngularJS là gì?</a></br>
-   <a href="#WhatisJsonServer">2: JSON SERVER là gì?</a></br>
-  <a href="#WhatisAngularJS">3: Hoạt Động CRUD là gì?</a></br>
+   <a href="#WhatisAngularJS">1: AngularJS là gì?</a> </br>
+   <a href="#WhatisJsonServer">2: JSON SERVER là gì?</a> </br>
+  <a href="#WhatisAngularJS">3: Hoạt Động CRUD là gì?</a> </br>
    <a href="#WhatisAngularJS">4:Triển khai crud trong Angularjs với Json-server?</a>
    </td>
    </tbody>
@@ -283,15 +283,19 @@ function productController($scope, $http){
    
    thêm button xóa trong table 
    
-    ```
+   
+```
     
     <td><button ng-click="delete($event,$index)" class="btn btn-danger"> delete</button></td>
     
-    ```
+```
+    
     
     > main.js
     
-    ```
+  
+    
+```
     
      $scope.delete = function(event, index){
         event.preventDefault()
@@ -301,7 +305,8 @@ function productController($scope, $http){
         )
     }
     
-    ```
+ ```
+    
     
     
     > toàn bộ code trong bài viết có thể lấy [tại đây] (https://github.com/thangdtph27626/demo_angularjs_jsonserver.github.io)
