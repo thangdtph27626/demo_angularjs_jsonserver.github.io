@@ -7,8 +7,62 @@
     <link rel="stylesheet" href="./public/bootstrap.min (1).css">
     <title>Document</title>
 </head>
-<body>
-    
+<body ng-app="myapp">
+    <div class="" ng-controller="productController">
+
+        <form name="form_product">
+            <h2>Quản lý sản phẩm</h2>
+            <div class="modal-body">
+              <div class="mb-3 row">
+                <label for="exampleInputEmail1" class="form-label col-2">Tên sản phẩm</label>
+                <div class="col-10">
+                  <input type="text" class="form-control" name="ten" id="exampleInputEmail1" required ng-model="product.ten"
+                    aria-describedby="emailHelp">
+                  <span class="text-danger" ng-show="form_product.ten.$invalid && form_product.ten.$touched">
+                    Không được để trống
+                  </span>
+        
+                </div>
+              </div>
+              <div class="mb-3 row">
+                <label for="exampleInputPassword1" class="form-label col-2">giá</label>
+                <div class="col-10">
+                  <input type="number" class="form-control" name="gia" id="exampleInputPassword1" required
+                    ng-model="product.gia">
+                  <span class="text-danger" ng-show="form_product.gia.$error.number && form_product.gia.$touched">
+                    Phải nhập số
+                  </span>
+                  <span class="text-danger" ng-show="form_product.gia.$error.required && form_product.gia.$touched">
+                    Không được để trống
+                  </span>
+                </div>
+              </div>
+              <div class="modal-footer ">
+                <button type="submit" class="btn btn-primary" ng-click="save($event)">Save changes</button>
+                <button type="button" class="btn btn-primary" ng-click="clear($event)">clear</button>
+              </div>
+          </form>
+
+        <!-- hiển thị sản phẩm -->
+        <table class="table align-middle">
+            <thead>
+              <th>stt</th>
+              <th>tên</th>
+              <th>giá</th>
+              <th colspan="2">Hành động</th>
+            </thead>
+            <tbody>
+              <tr ng-repeat="product in products">
+                <td>{{$index +1}}</td>
+                <td>{{product.ten}}</td>
+                <td>{{product.gia}}</td>
+                <td><button ng-click="sua($event,$index)" class="btn btn-primary">update</button></td>
+                <td><button ng-click="delete($event,$index)" class="btn btn-danger"> delete</button></td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+
     <script src="./public/bootstrap.min.js"></script>
     <script src="./public/angular.min.js"></script>
     <script src="main.js"></script>
