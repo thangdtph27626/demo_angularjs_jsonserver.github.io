@@ -277,23 +277,21 @@ function productController($scope, $http){
  
  ```
   
-   <h2 id="delete"> xóa sản phẩm  </h2> 
+  <h2 id="delete"> xóa sản phẩm  </h2> 
    
-   > index.js 
+> index.js 
    
-   thêm button xóa trong table 
-   
-   
-```
-    
-    <td><button ng-click="delete($event,$index)" class="btn btn-danger"> delete</button></td>
-    
-```
-    
-    
-    > main.js
-    
+ thêm button xóa trong table 
   
+ ```
+ 
+  <td><button ng-click="delete($event,$index)" class="btn btn-danger"> delete</button></td>
+ 
+ ```
+    
+    
+> main.js
+    
     
 ```
     
@@ -308,8 +306,8 @@ function productController($scope, $http){
  ```
     
     
-    
-    > toàn bộ code trong bài viết có thể lấy [tại đây] (https://github.com/thangdtph27626/demo_angularjs_jsonserver.github.io)
+
+> toàn bộ code trong bài viết có thể lấy [tại đây] (https://github.com/thangdtph27626/demo_angularjs_jsonserver.github.io)
     
    
   
