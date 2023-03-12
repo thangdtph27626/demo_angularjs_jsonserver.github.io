@@ -11,10 +11,10 @@
    </theader>
   <tbody>
   <td>
-   <a href="#WhatisAngularJS">1: AngularJS là gì?</a></br>
-   <a href="#WhatisJsonServer">2: JSON SERVER là gì?</a></br>
-  <a href="#WhatisAngularJS">3: Hoạt Động CRUD là gì?</a></br>
-   <a href="#WhatisAngularJS">4:Triển khai crud trong Angularjs với Json-server?</a>
+   <p><a href="#WhatisAngularJS">1: AngularJS là gì?</a></p>
+   <p><a href="#WhatisJsonServer">2: JSON SERVER là gì?</a></p>
+  <p><a href="#WhatisAngularJS">3: Hoạt Động CRUD là gì?</a></p>
+   <p><a href="#WhatisAngularJS">4:Triển khai crud trong Angularjs với Json-server?</a></p>
    </td>
    </tbody>
    </table>
